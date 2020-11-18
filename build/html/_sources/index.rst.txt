@@ -8,14 +8,18 @@ Welcome to nlp-practice's documentation!
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
     
-   关于安装 <install>
+    安装、快速开始 <quickstart>
+    功能list <api1>
+    教程 <tutorials>
+    API列表 <api2>
+    FAQ <faq>
+    版本更新 <version>
+    社区贡献/开源共建 <contribution> 
 
 
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+.. Indices and tables
+.. ==================
+.. * :ref:`genindex`
+.. * :ref:`modindex`
+.. * :ref:`search`

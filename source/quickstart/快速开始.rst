@@ -1,0 +1,8 @@
+========
+快速开始
+========
+介绍一个最简单的案例
+参考GluonNLP的快速入门
+让开发者对我们的API和整体功能有快速的理解
+和gluonnlp类似，更多体现API，来突出我们与框架的紧密的『定位』
+https://github.com/dmlc/gluon-nlp#quick-start-guide
