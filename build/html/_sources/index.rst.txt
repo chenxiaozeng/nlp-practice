@@ -10,13 +10,11 @@ Welcome to nlp-practice's documentation!
    :maxdepth: 2
     
     安装、快速开始 <quickstart>
-    功能list <api1>
-    教程 <tutorials>
+    案例与教程 <tutorials>
     API列表 <api2>
+    社区贡献 <contribution> 
     FAQ <faq>
     版本更新 <version>
-    社区贡献/开源共建 <contribution> 
-
 
 .. Indices and tables
 .. ==================
