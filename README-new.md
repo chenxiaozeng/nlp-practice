@@ -40,23 +40,16 @@
 
 * 2021.12.28 PaddleNLP [release/2.2.2](https://github.com/PaddlePaddle/PaddleNLP/releases/tag/v2.2.2) 发布语义检索、问答、评论观点抽取和情感倾向分析 [产业化案例](./applications)，快速搭建系统！配套视频课程[直通车](https://aistudio.baidu.com/aistudio/course/introduce/24902)！
 
-<a href=#特性> 特性 </a>
-
 ## 特性
 
 PaddleNLP是飞桨自然语言处理开发库，旨在提升开发者在文本领域的开发效率，并提供丰富的NLP应用示例。具备以下四大特性：
 
-<a href=#开箱即用的一键预测能力> 开箱即用的一键预测能力 </a>
-
-<img src="https://user-images.githubusercontent.com/11793384/168454776-2075cc68-9402-4b0b-8723-5be0a315ddc3.png" width="18" height="18" /><a href=#dd开箱即用的一键预测能力> dd开箱即用的一键预测能力 </a>
+<img src="https://user-images.githubusercontent.com/11793384/168454776-2075cc68-9402-4b0b-8723-5be0a315ddc3.png" width="18" height="18" /><a href=#开箱即用的一键预测能力> 开箱即用的一键预测能力 </a>
 
 <img src="https://user-images.githubusercontent.com/11793384/168454751-f111d8b4-a16a-4e36-b9de-3af8a2f00714.png" width="18" height="18" /><a href=#dd优质的中文预训练模型库> dd优质的中文预训练模型库 </a> 
 
-开箱即用的一键预测能力
 
-test
-
-### <img src="https://user-images.githubusercontent.com/11793384/168454776-2075cc68-9402-4b0b-8723-5be0a315ddc3.png" width="28" height="28" /> ddd开箱即用的一键预测能力
+### <img src="https://user-images.githubusercontent.com/11793384/168454776-2075cc68-9402-4b0b-8723-5be0a315ddc3.png" width="28" height="28" /> 开箱即用的一键预测能力
 
 Taskflow旨在提供**开箱即用**的产业级NLP预置任务能力，覆盖自然语言理解与生成两大场景，提供**产业级的效果**与**极致的预测性能**。
 
