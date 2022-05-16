@@ -5,6 +5,7 @@
 </p>
 
 
+
 ------------------------------------------------------------------------------------------
 
 [![PyPI - PaddleNLP Version](https://img.shields.io/pypi/v/paddlenlp.svg?label=pip&logo=PyPI&logoColor=white)](https://pypi.org/project/paddlenlp/)
@@ -14,6 +15,7 @@
 ![GitHub](https://img.shields.io/github/license/paddlepaddle/paddlenlp)
 
 <h4 align="left">
+
 
 
   <a href=#特性> 特性 </a> |
@@ -83,6 +85,7 @@ gpt = AutoModelForPretraining.from_pretrained('gpt-cpm-large-cn')
 <details><summary>&emsp;对预训练模型应用范式如语义表示、文本分类、句对匹配、序列标注、问答等，提供统一的API体验（可展开详情）</summary><div>
 
 
+
 ```python
 import paddle
 from paddlenlp.transformers import *
@@ -104,6 +107,7 @@ model = AutoModelForQuestionAnswering.from_pretrained('ernie-3.0-medium-zh')
 </div></details>
 
 <details><summary>&emsp;PaddleNLP预训练模型适用任务汇总（可展开详情）</summary><div>
+
 
 
 | Model              | Sequence Classification | Token Classification | Question Answering | Text Generation | Multiple Choice |
@@ -174,6 +178,7 @@ PaddleNLP针对信息抽取、语义检索、问答、情感倾向分析，推�
 </div>
 
 
+
 更多请参考[智能语音指令解析](./applications/speech_cmd_analysis)。
 
 - **语义检索系统**
@@ -185,6 +190,7 @@ PaddleNLP针对信息抽取、语义检索、问答、情感倾向分析，推�
 </div>
 
 
+
 更多请参考[语义检索系统](./applications/neural_search)。
 
 - **智能问答系统**
@@ -194,6 +200,7 @@ PaddleNLP针对信息抽取、语义检索、问答、情感倾向分析，推�
 <div align="center">
     <img src="https://user-images.githubusercontent.com/11793384/168407211-edb14045-15f9-4e0b-8339-d1ffa386ee6e.gif" width="400">
 </div>
+
 
 
 更多请参考[智能问答系统](./applications/question_answering)。
@@ -208,6 +215,7 @@ PaddleNLP针对信息抽取、语义检索、问答、情感倾向分析，推�
 </div>
 
 
+
 更多请参考[情感分析](./applications/sentiment_analysis)。
 
 ### 大规模分布式训练与高性能推理能力
@@ -219,6 +227,7 @@ PaddleNLP针对信息抽取、语义检索、问答、情感倾向分析，推�
 </div>
 
 
+
 更多内容请参考[FasterTokenizer文档](./faster_tokenizers)
 
 - **面向生成任务的高性能加速组件：FasterGeneration**
@@ -226,6 +235,7 @@ PaddleNLP针对信息抽取、语义检索、问答、情感倾向分析，推�
 <div align="center">
     <img src="https://user-images.githubusercontent.com/11793384/168407831-914dced0-3a5a-40b8-8a65-ec82bf13e53c.gif" width="600">
 </div>
+
 
 
 更多内容请参考[FasterGeneration文档](./examples/faster/faster_generation)
@@ -239,6 +249,7 @@ PaddleNLP针对信息抽取、语义检索、问答、情感倾向分析，推�
 <div align="center">
   <img src="https://raw.githubusercontent.com/PaddlePaddle/PaddleNLP/release/2.2/docs/imgs/wechat.png" width="188" height="188" />
 </div>
+
 
 
 ## 安装
