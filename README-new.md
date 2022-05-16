@@ -161,7 +161,7 @@ model = AutoModelForQuestionAnswering.from_pretrained('ernie-3.0-medium-zh')
 
 精选预训练模型示例可参考[Model_Zoo](./model_zoo)。
 
-更多场景示例文档可参考[example文档](./docs/model_zoo/examples.md)、[Notbook交互式教程](https://aistudio.baidu.com/aistudio/personalcenter/thirdview/574995)。
+更多场景示例文档可参考[examples目录](./examples)、[Notbook交互式教程](https://aistudio.baidu.com/aistudio/personalcenter/thirdview/574995)。
 
 
 ### 产业级端到端系统范例
@@ -173,7 +173,7 @@ PaddleNLP针对信息抽取、语义检索、问答、情感倾向分析，推�
 集成了业界领先的语音识别（Automatic Speech Recognition, ASR）、信息抽取（Information Extraction, IE）等技术，打造智能一体化的语音指令系统，广泛应用于智能语音填单、智能语音交互、智能语音检索、手机APP语音唤醒等场景，提高人机交互效率。
 
 <div align="center">
-    <img src="https://user-images.githubusercontent.com/11793384/168412618-04897a47-79c9-4fe7-a054-5dc1f6a1f75c.png" width="400">
+    <img src="https://user-images.githubusercontent.com/11793384/168412618-04897a47-79c9-4fe7-a054-5dc1f6a1f75c.png" width="600">
 </div>
 
 
@@ -184,7 +184,7 @@ PaddleNLP针对信息抽取、语义检索、问答、情感倾向分析，推�
 针对无监督数据、有监督数据等多种数据情况，结合SimCSE、In-batch Negatives、ERNIE-Gram单塔模型等，推出前沿的语义检索方案，包含召回、排序环节，打通训练、调优、高效向量检索引擎建库和查询全流程。
 
 <div align="center">
-    <img src="https://user-images.githubusercontent.com/11793384/168407426-fc363513-8a78-4092-9bc0-db108244366f.png" width="400">
+    <img src="https://user-images.githubusercontent.com/11793384/168514909-8817d79a-72c4-4be1-8080-93d1f682bb46.gif" width="400">
 </div>
 
 更多可参考[语义检索系统](./applications/neural_search)。
@@ -194,13 +194,14 @@ PaddleNLP针对信息抽取、语义检索、问答、情感倾向分析，推�
 推出基于语义检索技术的问答系统，支持FAQ问答、说明书问答等多种业务场景。
 
 <div align="center">
-    <img src="https://user-images.githubusercontent.com/11793384/168407211-edb14045-15f9-4e0b-8339-d1ffa386ee6e.gif" width="400">
+    <img src="https://user-images.githubusercontent.com/11793384/168514868-1babe981-c675-4f89-9168-dd0a3eede315.gif" width="400">
 </div>
+
 
 更多可参考[智能问答系统](./applications/question_answering)。
 
 
-- **评论观点抽取和情感分析**
+- **评论观点抽取与情感分析**
 
 基于情感知识增强预训练模型SKEP，针对产品评论进行评价维度和观点抽取，以及细粒度的情感分析。
 
@@ -212,15 +213,21 @@ PaddleNLP针对信息抽取、语义检索、问答、情感倾向分析，推�
 
 ### 大规模分布式训练与高性能推理能力
 
+- **飞桨4D混合并行分布式训练**
+
+<div align="center">
+    <img src="https://user-images.githubusercontent.com/11793384/168515134-513f13e0-9902-40ef-98fa-528271dcccda.png" width="400">
+</div>
+
+更多技术细节可参考[GPT-3](./examples/language_model/gpt-3)
+
 - **高性能Transformer类文本分词器：FasterTokenizer**
 
 <div align="center">
     <img src="https://user-images.githubusercontent.com/11793384/168407921-b4395b1d-44bd-41a0-8c58-923ba2b703ef.png" width="600">
 </div>
 
-
-
-更多内容请参考[FasterTokenizer文档](./faster_tokenizers)
+更多内容可参考[FasterTokenizer文档](./faster_tokenizers)
 
 - **面向生成任务的高性能加速组件：FasterGeneration**
 
@@ -228,9 +235,7 @@ PaddleNLP针对信息抽取、语义检索、问答、情感倾向分析，推�
     <img src="https://user-images.githubusercontent.com/11793384/168407831-914dced0-3a5a-40b8-8a65-ec82bf13e53c.gif" width="600">
 </div>
 
-
-
-更多内容请参考[FasterGeneration文档](./examples/faster/faster_generation)
+更多内容可参考[FasterGeneration文档](./examples/faster/faster_generation)
 
 ## 社区交流👬
 
@@ -241,7 +246,6 @@ PaddleNLP针对信息抽取、语义检索、问答、情感倾向分析，推�
 <div align="center">
   <img src="https://raw.githubusercontent.com/PaddlePaddle/PaddleNLP/release/2.2/docs/imgs/wechat.png" width="188" height="188" />
 </div>
-
 
 
 ## 安装
@@ -309,7 +313,7 @@ PaddleNLP提供全流程的文本领域API，可大幅提升NLP任务建模的�
 - 灵活高效地完成数据预处理的[Data API](https://paddlenlp.readthedocs.io/zh/latest/source/paddlenlp.data.html)；
 - 提供500+预训练模型的[Transformers API](./docs/model_zoo/transformers.rst)。    
 
-更多使用方法请参考[API文档](./docs/model_zoo/api.md)
+更多使用方法请参考[API文档](https://paddlenlp.readthedocs.io/zh/latest/source/paddlenlp.data.html)。
 
 
 ## 版本更新
