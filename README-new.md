@@ -61,15 +61,13 @@ Taskflow旨在提供**开箱即用**的产业级NLP预置任务能力，覆盖�
 
 ![taskflow1](https://user-images.githubusercontent.com/11793384/159693816-fda35221-9751-43bb-b05c-7fc77571dd76.gif)
 
-更多使用方法请参考[Taskflow文档](./docs/model_zoo/taskflow.md)。
+更多使用方法可参考[Taskflow文档](./docs/model_zoo/taskflow.md)。
 
 ### 优质的中文预训练模型库
 
 - **Transformer 预训练模型**
 
-精选 **45+** 个网络结构和 **500+** 个预训练模型参数，⭐️⭐️ 国内下载速度快!⭐️⭐️ 既包括百度自研的预训练模型如ERNIE系列, PLATO, SKEP等，也涵盖业界主流的中文预训练模型如BERT，GPT，RoBERTa，T5等。使用AutoModel可以下载不同网络结构的预训练模型。
-
-统一通过调用`paddlenlp.transformers`使用：
+精选 **45+** 个网络结构和 **500+** 个预训练模型参数，⭐️⭐️ 国内下载速度快!⭐️⭐️ 既包括百度自研的预训练模型如ERNIE系列, PLATO, SKEP等，也涵盖业界主流的中文预训练模型如BERT，GPT，RoBERTa，T5等。使用`paddlenlp.transformers.AutoModel`可以下载不同网络结构的预训练模型：
 
 ```python
 from paddlenlp.transformers import *
@@ -117,7 +115,6 @@ model = AutoModelForQuestionAnswering.from_pretrained('ernie-3.0-medium-zh')
 | BERT               | ✅                       | ✅                    | ✅                  | ❌               | ✅               |
 | BigBird            | ✅                       | ✅                    | ✅                  | ❌               | ✅               |
 | BlenderBot         | ❌                       | ❌                    | ❌                  | ✅               | ❌               |
-| BlenderbotSmall    | ❌                       | ❌                    | ❌                  | ✅               | ❌               |
 | ChineseBERT        | ✅                       | ✅                    | ✅                  | ❌               | ❌               |
 | ConvBERT           | ✅                       | ✅                    | ✅                  | ❌               | ✅               |
 | CTRL               | ✅                       | ❌                    | ❌                  | ❌               | ❌               |
@@ -156,14 +153,16 @@ model = AutoModelForQuestionAnswering.from_pretrained('ernie-3.0-medium-zh')
 
 </div></details>
 
-请参考[Transformer 文档](/docs/model_zoo/index.rst) 查看目前支持的预训练模型结构、参数和详细用法。
+可参考[Transformer 文档](/docs/model_zoo/index.rst) 查看目前支持的预训练模型结构、参数和详细用法。
 
 - **模型应用示例，覆盖NLP全场景**
 
 覆盖从学术到产业级的NLP[应用示例](#多场景的应用示例)，涵盖NLP基础技术、NLP系统应用以及相关拓展应用。全面基于飞桨核心框架2.0全新API体系开发，为开发者提供飞桨文本领域的最佳实践。
-多场景示例文档请参考[example文档](./docs/model_zoo/examples.md)、[Notbook交互式教程](https://aistudio.baidu.com/aistudio/personalcenter/thirdview/574995)。
 
-精选预训练模型示例请参考[Model_Zoo](./model_zoo)。
+精选预训练模型示例可参考[Model_Zoo](./model_zoo)。
+
+更多场景示例文档可参考[example文档](./docs/model_zoo/examples.md)、[Notbook交互式教程](https://aistudio.baidu.com/aistudio/personalcenter/thirdview/574995)。
+
 
 ### 产业级端到端系统范例
 
@@ -171,52 +170,45 @@ PaddleNLP针对信息抽取、语义检索、问答、情感倾向分析，推�
 
 - **智能语音指令解析**
 
-描述：
+集成了业界领先的语音识别（Automatic Speech Recognition, ASR）、信息抽取（Information Extraction, IE）等技术，打造智能一体化的语音指令系统，广泛应用于智能语音填单、智能语音交互、智能语音检索、手机APP语音唤醒等场景，提高人机交互效率。
 
 <div align="center">
     <img src="https://user-images.githubusercontent.com/11793384/168412618-04897a47-79c9-4fe7-a054-5dc1f6a1f75c.png" width="400">
 </div>
 
 
-
-更多请参考[智能语音指令解析](./applications/speech_cmd_analysis)。
+更多可参考[智能语音指令解析](./applications/speech_cmd_analysis)。
 
 - **语义检索系统**
 
-描述：
+针对无监督数据、有监督数据等多种数据情况，结合SimCSE、In-batch Negatives、ERNIE-Gram单塔模型等，推出前沿的语义检索方案，包含召回、排序环节，打通训练、调优、高效向量检索引擎建库和查询全流程。
 
 <div align="center">
     <img src="https://user-images.githubusercontent.com/11793384/168407426-fc363513-8a78-4092-9bc0-db108244366f.png" width="400">
 </div>
 
-
-
-更多请参考[语义检索系统](./applications/neural_search)。
+更多可参考[语义检索系统](./applications/neural_search)。
 
 - **智能问答系统**
 
-描述：
+推出基于语义检索技术的问答系统，支持FAQ问答、说明书问答等多种业务场景。
 
 <div align="center">
     <img src="https://user-images.githubusercontent.com/11793384/168407211-edb14045-15f9-4e0b-8339-d1ffa386ee6e.gif" width="400">
 </div>
 
+更多可参考[智能问答系统](./applications/question_answering)。
 
 
-更多请参考[智能问答系统](./applications/question_answering)。
+- **评论观点抽取和情感分析**
 
-
-- **产品评论维度、观点抽取和细粒度情感分析**
-
-描述：
+基于情感知识增强预训练模型SKEP，针对产品评论进行评价维度和观点抽取，以及细粒度的情感分析。
 
 <div align="center">
     <img src="https://user-images.githubusercontent.com/11793384/168407260-b7f92800-861c-4207-98f3-2291e0102bbe.png" width="400">
 </div>
 
-
-
-更多请参考[情感分析](./applications/sentiment_analysis)。
+更多可参考[情感分析](./applications/sentiment_analysis)。
 
 ### 大规模分布式训练与高性能推理能力
 
