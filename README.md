@@ -50,12 +50,13 @@ PLATO-XL 是业界首个开源的百亿超大规模开放域对话预训练模�
 
 - **BERT**
 
-最经典的
-- **BERT**
+最经典的预训练模型之一，以 Transformer 编码器为网络基本组件，针对掩码语言模型（Masked Language Model）和邻接句子预测（Next Sentence Prediction）两个任务在大规模无标注文本语料上进行预训练（pre-train），得到融合了双向内容的通用语义表示模型。    
 参考论文：[BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](https://arxiv.org/pdf/1810.04805.pdf)
 
 - **ELECTRA**
-参考论文：[]()
+
+ELECTRA 在 BERT 的基础上对其预训练过程进行了改进：预训练由 Generator 和 Discriminator 两部分网络组成，各自包含1个BERT模型。在多个NLP任务上效果优于BERT。     
+参考论文：[ELECTRA: PRE-TRAINING TEXT ENCODERS AS DISCRIMINATORS RATHER THAN GENERATORS](https://arxiv.org/pdf/2003.10555.pdf)
 
 - **GPT**
 
