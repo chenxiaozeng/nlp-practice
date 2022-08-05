@@ -40,6 +40,7 @@ UNIMO 提出统一模态学习方法，同时解决单模与多模任务。UNIMO
 参考论文：[UNIMO: Towards Unified-Modal Understanding and Generation via Cross-Modal Contrastive Learning](https://arxiv.org/pdf/2012.15409v4.pdf)
 
 - **PLATO-XL**
+
 PLATO-XL 是业界首个开源的百亿超大规模开放域对话预训练模型，其使用了参数共享（encoder-decoder 共享参数）的 UnifiedTransformer（prefix LM）模型架构，将模型参数量提升到了 11B 量级，经过了十亿级样本对话数据的预训练，并引入 role embedding 区分多方对话中的对话角色提升预训练效果，最终模型闲聊测试效果超过了众多代表性的对话模型，可以直接使用 PLATO-XL 构建高质量的开放领域对话机器人。
 
 参考论文：[PLATO-XL: Exploring the Large-scale Pre-training of Dialogue Generation](https://arxiv.org/pdf/2109.09519.pdf)
