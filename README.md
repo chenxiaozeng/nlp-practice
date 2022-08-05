@@ -8,7 +8,7 @@
 
 - **ERNIE 3.0**
 
-在文心大模型 ERNIE 3.0 基础上通过在线蒸馏技术得到的轻量级模型，包含多个不同尺寸的小模型，刷新了中文小模型的 SOTA 成绩。    
+ERNIE 3.0 轻量级模型，通过文心大模型在线蒸馏技术获得，包含多个不同尺寸的小模型，刷新了中文小模型的 SOTA 成绩。    
 参考论文：[ERNIE-Tiny: A Progressive Distillation Framework for Pretrained Transformer Compression](https://arxiv.org/abs/2106.02241)
 
 - **UIE**
